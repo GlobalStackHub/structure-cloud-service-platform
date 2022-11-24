@@ -11,4 +11,17 @@
     <artifactId>cloud-service-dubbo-cloud-interface</artifactId>
     <version>${application.model.version}</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.olympus</groupId>
+            <artifactId>cloud-service-spring-cloud-client</artifactId>
+            <version>${application.model.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.olympus</groupId>
+            <artifactId>cloud-service-dubbo-cloud-client</artifactId>
+            <version>${application.model.version}</version>
+        </dependency>
+    </dependencies>
 </project>
