@@ -1,4 +1,4 @@
-package com.olympus;
+package com.olympus.cloud;
 
 /**
  * ${DESCRIPTION}
