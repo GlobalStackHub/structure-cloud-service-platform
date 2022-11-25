@@ -29,6 +29,12 @@
             <artifactId>cloud-service-spring-cloud-dal</artifactId>
             <version>${application.model.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.olympus</groupId>
+            <artifactId>cloud-service-spring-cloud-interface</artifactId>
+            <version>${application.model.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

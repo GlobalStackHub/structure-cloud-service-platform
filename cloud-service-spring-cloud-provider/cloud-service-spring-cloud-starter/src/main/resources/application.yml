@@ -1,4 +1,11 @@
 spring:
+  cloud:
+    nacos:
+      server-addr: ${CLOUD_SERVER:124.222.147.194:8848}
+      discovery:
+        service: cloud-service-spring-cloud-provider
+  application:
+    name: cloud-service-spring-cloud-provider
   datasource:
     url: jdbc:mysql://124.222.147.194:3306/structure_cloud_service_db?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&serverTimezone=GMT%2B8
     hikari:
