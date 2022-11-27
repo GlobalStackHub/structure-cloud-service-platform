@@ -1,1 +1,20 @@
-
+server:
+  port: ${SERVER_PORT:8000}
+  tomcat:
+    remoteip:
+      host-header: X-Real-IP
+    max-http-form-post-size: 30MB
+    connection-timeout: 120000
+  netty:
+    connection-timeout: 120000
+spring:
+  cloud:
+    gateway:
+      httpclient:
+        pool:
+          max-idle-time: 10000
+      routes:
+        - id: cloud-service-center-domain-service
+          uri: lb://cloud-service-center-domain-service-deployment.spring-kubernetes-cloud.svc.cluster.local:8080
+          predicates:
+            - Path=/cloud-service-center-domain-service/**
