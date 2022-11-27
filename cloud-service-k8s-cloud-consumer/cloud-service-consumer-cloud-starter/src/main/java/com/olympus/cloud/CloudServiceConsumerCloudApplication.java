@@ -8,10 +8,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-public class CloudServiceSpringCloudProviderApplication {
+public class CloudServiceConsumerCloudApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudServiceSpringCloudProviderApplication.class, args);
+        SpringApplication.run(CloudServiceConsumerCloudApplication.class, args);
     }
 
 }

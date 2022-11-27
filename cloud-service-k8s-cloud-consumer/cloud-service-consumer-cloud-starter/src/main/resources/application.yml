@@ -1,9 +1,8 @@
 spring:
   cloud:
-    nacos:
-      server-addr: ${CLOUD_SERVER:124.222.147.194:8848}
+    kubernetes:
       discovery:
-        service: cloud-service-spring-cloud-provider
+        all-namespaces: true
   application:
     name: cloud-service-spring-cloud-provider
   datasource:

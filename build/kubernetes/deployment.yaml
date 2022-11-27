@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-kubernetes-cloud-deployment
+  namespace: spring-kubernetes-cloud
+  labels:
+    app: spring-kubernetes-cloud-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: spring-kubernetes-cloud-deployment
+      labels:
+        app: spring-kubernetes-cloud-deployment
+    spec:
+      containers:
+        - name: spring-kubernetes-cloud-deployment
+          image:
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: spring-kubernetes-cloud-deployment
