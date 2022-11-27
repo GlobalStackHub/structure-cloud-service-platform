@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-service-center-domain-router-deployment
+  namespace: spring-kubernetes-cloud
+  labels:
+    app: cloud-service-center-domain-router-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: cloud-service-center-domain-router-deployment
+      labels:
+        app: cloud-service-center-domain-router-deployment
+    spec:
+      containers:
+        - name: spring-kubernetes-cloud-deployment
+          image: dockereddie/cloud-service-center-domain-router:1.0.0-SNAPSHOT
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: cloud-service-center-domain-router-deployment

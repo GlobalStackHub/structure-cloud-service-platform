@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-kubernetes-cloud-deployment
+  name: cloud-service-center-domain-service-deployment
   namespace: spring-kubernetes-cloud
   labels:
-    app: spring-kubernetes-cloud-deployment
+    app: cloud-service-center-domain-service-deployment
 spec:
   replicas: 1
   template:
     metadata:
-      name: spring-kubernetes-cloud-deployment
+      name: cloud-service-center-domain-service-deployment
       labels:
-        app: spring-kubernetes-cloud-deployment
+        app: cloud-service-center-domain-service-deployment
     spec:
       containers:
         - name: spring-kubernetes-cloud-deployment
-          image:
+          image: dockereddie/cloud-service-center-domain-service:1.0.0-SNAPSHOT
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
       restartPolicy: Always
   selector:
     matchLabels:
-      app: spring-kubernetes-cloud-deployment
+      app: cloud-service-center-domain-service-deployment

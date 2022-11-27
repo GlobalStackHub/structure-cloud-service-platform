@@ -1,9 +1,8 @@
-FROM registry.cn-shanghai.aliyuncs.com/misumi/e-jdk:17.0.4.1
+FROM openjdk:17-jdk-alpine
 
 # 传入参数
 ARG ACTIVE_PROFILE
 ARG PROJECT_FILE
-ARG SHELL_FILE
 
 # copy arthas
 # COPY --from=hengyunabc/arthas:latest /opt/arthas /opt/arthas

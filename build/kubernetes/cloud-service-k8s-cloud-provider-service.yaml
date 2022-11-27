@@ -5,7 +5,7 @@ metadata:
   namespace: spring-kubernetes-cloud
 spec:
   selector:
-    app: spring-kubernetes-cloud-deployment
+    app: cloud-service-provider-cloud-starter-deployment
   ports:
     - port: 8080
       targetPort: 8080
