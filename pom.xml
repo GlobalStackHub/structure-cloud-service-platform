@@ -12,13 +12,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0-RC2</version>
+        <version>3.0.0</version>
         <relativePath/>
     </parent>
 
     <modules>
-        <module>cloud-service-spring-cloud-provider</module>
-        <module>cloud-service-dubbo-cloud-provider</module>
+        <module>cloud-service-k8s-cloud-consumer</module>
+        <module>cloud-service-k8s-cloud-provider</module>
         <module>cloud-service-center-domain-service</module>
         <module>cloud-service-center-domain-router</module>
     </modules>
@@ -89,7 +89,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
     <repositories>
         <repository>
