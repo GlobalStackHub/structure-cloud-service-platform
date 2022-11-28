@@ -20,6 +20,7 @@ spec:
           ports:
             - containerPort: 8080
       restartPolicy: Always
+      serviceAccountName: cloud-service-k8s-service-account
   selector:
     matchLabels:
       app: cloud-service-center-domain-service-deployment

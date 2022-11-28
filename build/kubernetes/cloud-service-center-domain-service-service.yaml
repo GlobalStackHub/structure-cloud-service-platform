@@ -7,7 +7,7 @@ spec:
   selector:
     app: cloud-service-center-domain-service-deployment
   ports:
-    - port: 8080
+    - port: 8081
       targetPort: 8080
-      nodePort: 30009
+      nodePort: 30010
   type: NodePort

@@ -7,7 +7,7 @@ spec:
   selector:
     app: cloud-service-provider-cloud-starter-deployment
   ports:
-    - port: 8080
+    - port: 8083
       targetPort: 8080
-      nodePort: 30009
+      nodePort: 30012
   type: NodePort
