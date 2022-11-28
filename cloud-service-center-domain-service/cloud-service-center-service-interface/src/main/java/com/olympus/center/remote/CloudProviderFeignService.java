@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @author eddie.lys
  * @since 2022/11/28
  */
-@FeignClient("cloud-service-provider-service.spring-kubernetes-cloud.svc.cluster.local:8080")
+@FeignClient("cloud-service-provider-service")
 public interface CloudProviderFeignService {
 
     /**

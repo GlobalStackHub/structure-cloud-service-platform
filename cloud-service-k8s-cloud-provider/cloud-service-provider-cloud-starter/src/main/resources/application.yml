@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: cloud-service-provider-service
   datasource:
     url: jdbc:mysql://124.222.147.194:3306/structure_cloud_service_db?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&serverTimezone=GMT%2B8
     hikari:

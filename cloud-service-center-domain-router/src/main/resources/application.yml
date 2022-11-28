@@ -8,6 +8,8 @@ server:
   netty:
     connection-timeout: 120000
 spring:
+  application:
+    name: spring-kubernetes-service
   cloud:
     gateway:
       httpclient:

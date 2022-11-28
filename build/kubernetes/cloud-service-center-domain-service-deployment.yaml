@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: spring-kubernetes-cloud-deployment
-          image: dockereddie/cloud-service-center-domain-service:1.0.0-SNAPSHOT
+          image: registry.cn-shanghai.aliyuncs.com/misumi_basic/cloud-service-center-domain-service:1.0.0-SNAPSHOT
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
