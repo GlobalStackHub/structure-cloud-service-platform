@@ -15,6 +15,6 @@ spring:
           max-idle-time: 10000
       routes:
         - id: cloud-service-center-domain-service
-          uri: lb://cloud-service-center-domain-service-deployment.spring-kubernetes-cloud.svc.cluster.local:8080
+          uri: lb://cloud-service-center-service.spring-kubernetes-cloud.svc.cluster.local:8080
           predicates:
             - Path=/cloud-service-center-domain-service/**
