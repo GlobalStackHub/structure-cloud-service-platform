@@ -6,6 +6,3 @@ spring:
     hikari:
       username: root
       password: root
-dubbo:
-  registry:
-    address: nacos:39.105.36.175:8848
